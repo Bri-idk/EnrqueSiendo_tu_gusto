@@ -1,0 +1,29 @@
+/*!Uso de important para sobreponer a bootstrap y colocar lo personalizado (uso exclusivo para la clase por evidencia de conocimiento no recomendable en casos reales)*/
+body{
+    font-family: Consolas !important;
+    background-color: #141414 !important;
+    color: white !important;
+}
+
+
+/**Estilos para el div de ID centrar*/
+.centrar{
+    text-align: center;
+}
+
+/**Color personalizado para navbar y footer*/
+.morao{ 
+    background-color: #000000;
+}
+
+/*propiedades personales para las img de carousel*/
+.carousel-item img{
+    height: 50em;
+    object-fit: cover;
+    object-position: center;
+}
+
+/**Color personalizado para navbar y footer*/
+.negro{ 
+    background-color: #141414;
+}

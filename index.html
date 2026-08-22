@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--*Hoja de estilocos propia y link a bootstrap⚡-->
+    <!--*Hoja de estilocos propia, link a bootstrap⚡ y un icon bonito para la pag-->
     <link rel="stylesheet" href="styles.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
@@ -11,10 +11,498 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <link
+      rel="icon"
+      href="/assets/icons/collect-svgrepo-com.svg"
+      type="image/x-icon"
+    />
     <!--Titulo loco😶‍🌫️-->
-    <title>Enrique siendo tu gusto</title>
+    <title>EnriqueSiendo_tu_gusto</title>
   </head>
-  <body>
+  <body class="d-flex flex-column min-vh-100">
+    <!--?Navibar tomada de bootstrap. Modificada para el contexto del proyecto.-->
+    <nav class="navbar navbar-expand-lg morao" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="/assets/icons/collect-svgrepo-com.svg"
+            alt="img_cool"
+            width="30"
+            height="30"
+          />
+          EnriqueSiendo_tu_gusto
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Secciones
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#musica">Musica</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!--!Etiqueta main para diferenciar el contenido de los elementos estaticos como navbar y footer-->
+    <main class="flex-grow-1">
+      <!--?flex-glow-1 empuja el footer a la fuerza al final🫡-->
+      <!--*carousel listo para uso de bootstrap modificado-->
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="/assets/musica.jpg"
+              class="d-block w-100"
+              alt="img_cool_musica"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Musica</h5>
+              <p>Recomendaciones de musica de calidad.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/assets/pelis.jpg"
+              class="d-block w-100"
+              alt="img_pelis"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Peliculas</h5>
+              <p>Recomendaciones cinematograficas. Absolute cinema.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/assets/etc.jpg" class="d-block w-100" alt="etc" />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Entre otros gustos.</h5>
+              <p>Recomendaciones variadas.</p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!--Todo: Apartir de aqui estan mis sections de contenido-->
+      <section id="musica" class="py-5">
+        <!-- El container envuelve las cards para que se acomoden-->
+        <div class="container">
+          <h1>MUSICA QUE QUIZA TE ESTAS PERDIENDO:</h1>
+        </div>
+        <div class="container">
+          <!--*usamos row para acomodar las cards-->
+          <div class="row g-4 justify-content-center">
+            <!-- CARD 1 -->
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card text-bg-dark h-100">
+                <img
+                  src="/assets/type_o_negative_p.jpg"
+                  class="card-img"
+                  alt="Type O Negative"
+                  style="height: 400px; object-fit: cover"
+                />
+                <div
+                  class="card-img-overlay d-flex flex-column justify-content-end align-items-center text-center"
+                >
+                  <h5
+                    class="card-title bg-dark bg-opacity-50 p-2 rounded w-100"
+                  >
+                    Type O Negative
+                  </h5>
+                  <p
+                    class="card-text bg-dark bg-opacity-50 p-2 text-white rounded"
+                  >
+                    Aunque existen muchas canciones buenas de Type O Negative,
+                    recomiendo ampliamente escuchar como primer acercamiento
+                    Pyretta Blaze o Nettie.
+                  </p>
+                  <button type="button" class="btn btn-success">
+                    Escuchar
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card text-bg-dark h-100">
+                <img
+                  src="/assets/ratm.jpg"
+                  class="card-img"
+                  alt="RATM"
+                  style="height: 400px; object-fit: cover"
+                />
+                <div
+                  class="card-img-overlay d-flex flex-column justify-content-end align-items-center text-center"
+                >
+                  <p
+                    class="card-text bg-dark bg-opacity-20 p-2 text-white rounded"
+                  >
+                    Recomiendo escuchar Killing in the name, Bullet in the head
+                    y Take the power back (Si, me gusta particularmente ese
+                    album.)
+                  </p>
+                  <button type="button" class="btn btn-success">
+                    Escuchar
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card text-bg-dark h-100">
+                <img
+                  src="/assets/soad.jpg"
+                  class="card-img"
+                  alt="Type O Negative"
+                  style="height: 400px; object-fit: cover"
+                />
+                <div
+                  class="card-img-overlay d-flex flex-column justify-content-end align-items-center text-center"
+                >
+                  <h5
+                    class="card-title bg-dark bg-opacity-50 p-2 rounded w-100"
+                  >
+                    SOAD
+                  </h5>
+                  <p
+                    class="card-text bg-dark bg-opacity-20 p-2 text-white rounded"
+                  >
+                    Haganse un favor y escuchen el Toxicity entero.
+                  </p>
+                  <button type="button" class="btn btn-success">
+                    Escuchar
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card text-bg-dark h-100">
+                <img
+                  src="/assets/Spinetta.jpg"
+                  class="card-img"
+                  alt="Type O Negative"
+                  style="height: 400px; object-fit: cover"
+                />
+                <div
+                  class="card-img-overlay d-flex flex-column justify-content-end align-items-center text-center"
+                >
+                  <h5
+                    class="card-title bg-dark bg-opacity-50 p-2 rounded w-100"
+                  >
+                    Spinetta/Pescado rabioso
+                  </h5>
+                  <p
+                    class="card-text bg-dark bg-opacity-50 p-2 text-white rounded"
+                  >
+                    Si no son tan de metal, el rock en español tiene tambien su
+                    lugar aqui, esta vez de la mano de Spinetta. Algunos tracks
+                    que recomiendo son Bajan, Post-crucifixion, A estos hombres
+                    tristes y Todas las hojas son del viento.
+                  </p>
+                  <button type="button" class="btn btn-success">
+                    Escuchar
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card text-bg-dark h-100">
+                <img
+                  src="/assets/pantera.jpg"
+                  class="card-img"
+                  alt="Type O Negative"
+                  style="height: 400px; object-fit: cover"
+                />
+                <div
+                  class="card-img-overlay d-flex flex-column justify-content-end align-items-center text-center"
+                >
+                  <h5
+                    class="card-title bg-dark bg-opacity-50 p-2 rounded w-100"
+                  >
+                    Pantera
+                  </h5>
+                  <p
+                    class="card-text bg-dark bg-opacity-50 p-2 text-white rounded"
+                  >
+                    Retomando el metal creo que cualquier album de pantera
+                    podria gustarte.
+                  </p>
+                  <button type="button" class="btn btn-success">
+                    Escuchar
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card text-bg-dark h-100">
+                <img
+                  src="/assets/mm.jpg"
+                  class="card-img"
+                  alt="Type O Negative"
+                  style="height: 400px; object-fit: cover"
+                />
+                <div
+                  class="card-img-overlay d-flex flex-column justify-content-end align-items-center text-center"
+                >
+                  <p
+                    class="card-text bg-dark bg-opacity-20 p-2 text-white rounded"
+                  >
+                    Me gustaria recomendar Killing Strangers, If i was your
+                    vampiere y Heart-Shaped glasses mas alla de las ya
+                    conocidas.
+                  </p>
+                  <button type="button" class="btn btn-success">
+                    Escuchar
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card text-bg-dark h-100">
+                <img
+                  src="/assets/poli.jpg"
+                  class="card-img"
+                  alt="Type O Negative"
+                  style="height: 400px; object-fit: cover"
+                />
+                <div
+                  class="card-img-overlay d-flex flex-column justify-content-end align-items-center text-center"
+                >
+                  <h5
+                    class="card-title bg-dark bg-opacity-50 p-2 rounded w-100"
+                  >
+                    Polyphia
+                  </h5>
+                  <p
+                    class="card-text bg-dark bg-opacity-20 p-2 text-white rounded"
+                  >
+                    Recomendacion un poco más personal para los musicos,
+                    escuchen polyphia o en su defecto a Tim Henson, ABC,
+                    G.O.A.T, Playing god, Neurotica y Bloodbath.
+                  </p>
+                  <button type="button" class="btn btn-success">
+                    Escuchar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--row-->
+        </div>
+        <!--container-->
+      </section>
+
+      <section id="peliculas" class="py-5">
+        <!-- UN SOLO CONTAINER PARA TODO EL BLOQUE -->
+        <div class="container">
+          <!-- Título dentro del contenedor principal -->
+          <h1 class="text-center mb-4">
+            PELÍCULAS QUE QUIZÁ TE ESTÁS PERDIENDO:
+          </h1>
+
+          <!-- Fila para las tarjetas -->
+          <div class="row g-4 justify-content-center">
+            <!-- CARD 1 -->
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card text-bg-dark h-100">
+                <img
+                  src="/assets/poli.jpg"
+                  class="card-img"
+                  alt="Polyphia"
+                  style="height: 400px; object-fit: cover"
+                />
+                <div
+                  class="card-img-overlay d-flex flex-column justify-content-end align-items-center text-center"
+                >
+                  <h5
+                    class="card-title bg-dark bg-opacity-50 p-2 rounded w-100"
+                  >
+                    Polyphia
+                  </h5>
+                  <p
+                    class="card-text bg-dark bg-opacity-20 p-2 text-white rounded"
+                  >
+                    Recomendación un poco más personal para los músicos,
+                    escuchen Polyphia o en su defecto a Tim Henson, ABC,
+                    G.O.A.T, Playing God, Neurotica y Bloodbath.
+                  </p>
+                  <button type="button" class="btn btn-success">
+                    Escuchar
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card text-bg-dark h-100">
+                <img
+                  src="/assets/poli.jpg"
+                  class="card-img"
+                  alt="Polyphia"
+                  style="height: 400px; object-fit: cover"
+                />
+                <div
+                  class="card-img-overlay d-flex flex-column justify-content-end align-items-center text-center"
+                >
+                  <h5
+                    class="card-title bg-dark bg-opacity-50 p-2 rounded w-100"
+                  >
+                    Polyphia
+                  </h5>
+                  <p
+                    class="card-text bg-dark bg-opacity-20 p-2 text-white rounded"
+                  >
+                    Recomendación un poco más personal para los músicos,
+                    escuchen Polyphia o en su defecto a Tim Henson, ABC,
+                    G.O.A.T, Playing God, Neurotica y Bloodbath.
+                  </p>
+                  <button type="button" class="btn btn-success">
+                    Escuchar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /row -->
+        </div>
+        <!-- /container -->
+      </section>
+      <section
+        id="series"
+        class="justify-content-center align-items-center d-flex"
+      ></section>
+      <section
+        id="videojuegos"
+        class="justify-content-center align-items-center d-flex"
+      ></section>
+      <section
+        ids="libros "
+        class="justify-content-center align-items-center d-flex"
+      ></section>
+      <section
+        id="comida"
+        class="justify-content-center align-items-center d-flex"
+      ></section>
+      <section
+        id="act_finde"
+        class="justify-content-center align-items-center d-flex"
+      ></section>
+      <section
+        id="lugares"
+        class="justify-content-center align-items-center d-flex"
+      ></section>
+      <!--Fin de las sections-->
+    </main>
+
+    <!--?Footer hecho de 0 apoyado de las clases predefinidas de bootstrap-->
+    <footer class="container-fluid pt-5 pb-4 morao py-3" data-bs-theme="dark">
+      <div class="container centrar" id="footerLoco">
+        <p class="mb-0 text-body-secondary">
+          &copy; 2026 EnriqueSiendo_tu_gusto
+        </p>
+
+        <a
+          href="/"
+          class="d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+        >
+        </a>
+
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="https://github.com/Bri-idk/EnrqueSiendo_tu_gusto"
+              class="nav-link px-2 text-body-secondary"
+              target="_blank"
+              >Repo</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
     <!--*Script propio y de bootstrap⚡-->
     <script src="script.js"></script>
     <script
