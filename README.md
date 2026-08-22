@@ -32,9 +32,10 @@ Este proyecto es una página web responsiva desarrollada como práctica individu
 
 ### Tabla de Registro de Prompts
 
-| #     | ¿Qué necesitábamos?   | Prompt                                                                                                                                                                                                       | ¿Qué respondió?                                                                          | ¿Qué utilicé?                                        | ¿Qué aprendí?                                                                          |
-| ----- | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------- | ---------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| **1** | La estructura inicial | _Estructura un readme.md basandote en las instrucciones del documento de manera breve ademas de dejaar lista la estructura para añadir las imagenes del proceso para dejar clara la documentacion del mismo_ | Un readme con las cualidades necesarias para poder describir de manera breve el proyecto | La estuctura y lenguaje markdown automatizado por IA | A primero definir las bases del proyecto y la idea antes de pensar en diseño o codigo. |
+| #     | ¿Qué necesitábamos?         | Prompt                                                                                                                                                                                                       | ¿Qué respondió?                                                                          | ¿Qué utilicé?                                        | ¿Qué aprendí?                                                                          |
+| ----- | --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------- | ---------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| **1** | La estructura inicial       | _Estructura un readme.md basandote en las instrucciones del documento de manera breve ademas de dejaar lista la estructura para añadir las imagenes del proceso para dejar clara la documentacion del mismo_ | Un readme con las cualidades necesarias para poder describir de manera breve el proyecto | La estuctura y lenguaje markdown automatizado por IA | A primero definir las bases del proyecto y la idea antes de pensar en diseño o codigo. |
+| **2** | Reestructuracion del codigo | _Reestructura el codigo siguiendo las mejores practicas pero deja el codigo y ocntenido intactos, solo toca lo que sea necesario anidar o acomodar._                                                         | El codigo sin faltas de ortografia, links bien acomodados y rutas bien definidas         | A estructurar y dejar claro el codigo.               |
 
 ### Prompt más Útil
 
@@ -54,9 +55,15 @@ Este proyecto es una página web responsiva desarrollada como práctica individu
 - **Commit 1** _El commit 1 (First commit) solo tiene la funcion de dar inicio al proyecto. Trayendo consigo la base usable html/css(vacio)/scrip(vacio)_
   ![Imagen de traqueo del proyecto](/doc_img/primerCommit.png)
 - **Commit 2** _Este commit tiene como objetivo dejar la base clara del readme.md para en el transcurso del protecto. Esto facilitara la documentacion y no se dejara al final._
+- **Commit 3** _Este commit tiene la base y un estregable ya bastante bueno, hasta el momento se a trabajado con elementos de bootstrap y reutilizandolor cambiando ciertas propiedades (tambien de bootstrap), la funcionalidad del codigo es clara ya que he dividido todo el codigo y comentado las partes importantes._
+- **Commit 4** _Este commit tiene como objetivo ser el esntregable, ya con la mejor apariencia posible y funcionalidades necesarias para que el sitio sea utilizabel, aun que este terminado este cuenta perfectamente como mi MVP, espero les guste. Tambien se añadio un host pequeño que estara activo solo hasta el lunes 24 de agosto._
 
 ### Fragmento 1: Variables en JavaScript
 
 ```javascript
 ninguna aun 😛
 ```
+
+### Creditos:
+
+- **Creditos a de los recursos visuales a quien corresponda**
